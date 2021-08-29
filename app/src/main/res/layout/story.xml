@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp">
+
+        <TextView
+            android:id="@+id/storyname"
+            android:layout_width="311dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/storyimage"
+            android:layout_toRightOf="@+id/storyimage"
+            android:text="Story name"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/sharebtn"
+            android:layout_width="73dp"
+            android:layout_height="33dp"
+            android:layout_weight="1"
+            android:background="@android:drawable/ic_menu_share"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/deletebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_weight="1"
+            android:background="@android:drawable/ic_menu_delete" />
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
